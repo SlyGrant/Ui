@@ -18,8 +18,8 @@ Le titre l'indique bien, je ne me prends pas la tête donc faites ça sur une VM
 
 Sur une VM Linux.
 Premières commandes :
-git clone URL_DU_DEPOT
-cd ui
+git clone https://github.com/SlyGrant/Ui.git
+cd Ui
  
 Les mots de passe que je fournis sont à changer ! Vous pourrez les voir dans le .env en faisant 
 La commande :
@@ -37,21 +37,6 @@ docker compose up -d
 Et si vous voulez vérifier que tout fonctionne :
 docker compose ps
 
-Pour accéder aux services si vous avez accepté l'ajout des noms de domaine :
-Heimdall : http://hub.ui.test
-WordPress : http://wordpress.ui.test
-Zabbix : http://zabbix.ui.test
-Nginx Proxy Manager : http://npm.ui.test 
-
-Ui, j'avais beaucoup d'inspiration. 
-
-Pour y accéder si vous avez refusé :
-
-Heimdall : http://localhost:8090
-WordPress : http://localhost:8091
-Zabbix : http://localhost:8093
-Nginx Proxy Manager : http://localhost:8092
-
 ## Règles de redirection sur Nginx Proxy Manager
 
 N'oubliez pas de faire vos règles de redirection sur Nginx Proxy Manager !
@@ -62,7 +47,7 @@ http://localhost:8092
 
 Puis dans **Hosts → Proxy Hosts → Add Proxy Host**.
 
-Les règles à ajouter :
+Les règles à ajouter (si vous avez accepté les noms de domaine):
 
 | Domain Names | Forward Hostname / IP | Forward Port |
 |---|---|---|
@@ -73,4 +58,19 @@ Les règles à ajouter :
 
 N'oubliez pas que votre Heimdall sera probablement vide, donc ajoutez les services que vous voulez !
 
+Pour accéder aux services si vous avez accepté l'ajout des noms de domaine :
+Heimdall : http://hub.ui.test
+WordPress : http://wordpress.ui.test
+Zabbix : http://zabbix.ui.test
+Nginx Proxy Manager : http://npm.ui.test 
+
+Pour y accéder si vous avez refusé :
+
+Heimdall : http://localhost:8090
+WordPress : http://localhost:8091
+Zabbix : http://localhost:8093
+Nginx Proxy Manager : http://localhost:8092
+
 Voilà voilà. Ui.
+
+Ui, j'avais beaucoup d'inspiration. 
