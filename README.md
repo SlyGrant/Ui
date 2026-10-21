@@ -28,7 +28,8 @@ cat .env
 
 Un script est disponible pour proposer des noms de domaine en local dans votre fichier hosts /etc/hosts (raison de plus pour le faire sur une VM) que vous pourrez
 accepter ou refuser.
-Les commandes :
+Les commandes :  
+
 chmod +x install.sh  
 
 ./install.sh
