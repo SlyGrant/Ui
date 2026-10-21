@@ -18,7 +18,8 @@ Le titre l'indique bien, je ne me prends pas la tête donc faites ça sur une VM
 
 Sur une VM Linux.
 Premières commandes :
-git clone https://github.com/SlyGrant/Ui.git
+git clone https://github.com/SlyGrant/Ui.git  
+
 cd Ui
  
 Les mots de passe que je fournis sont à changer ! Vous pourrez les voir dans le .env en faisant 
@@ -28,7 +29,8 @@ cat .env
 Un script est disponible pour proposer des noms de domaine en local dans votre fichier hosts /etc/hosts (raison de plus pour le faire sur une VM) que vous pourrez
 accepter ou refuser.
 Les commandes :
-chmod +x install.sh
+chmod +x install.sh  
+
 ./install.sh
 
 Si vous refusez, vous n'avez qu'à configurer les noms de domaine vous-mêmes
@@ -58,18 +60,28 @@ Les règles à ajouter (si vous avez accepté les noms de domaine):
 
 N'oubliez pas que votre Heimdall sera probablement vide, donc ajoutez les services que vous voulez !
 
-Pour accéder aux services si vous avez accepté l'ajout des noms de domaine :
-Heimdall : http://hub.ui.test
-WordPress : http://wordpress.ui.test
-Zabbix : http://zabbix.ui.test
-Nginx Proxy Manager : http://npm.ui.test 
+Pour accéder aux services si vous avez accepté l'ajout des noms de domaine :  
 
-Pour y accéder si vous avez refusé :
+Heimdall : http://hub.ui.test  
 
-Heimdall : http://localhost:8090
-WordPress : http://localhost:8091
-Zabbix : http://localhost:8093
-Nginx Proxy Manager : http://localhost:8092
+WordPress : http://wordpress.ui.test  
+
+Zabbix : http://zabbix.ui.test  
+
+Nginx Proxy Manager : http://npm.ui.test   
+
+
+Pour y accéder si vous avez refusé :  
+
+
+Heimdall : http://localhost:8090  
+
+WordPress : http://localhost:8091  
+
+Zabbix : http://localhost:8093  
+
+Nginx Proxy Manager : http://localhost:8092  
+
 
 Voilà voilà. Ui.
 
